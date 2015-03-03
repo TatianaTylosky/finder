@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+            <p>Bootcamp list:</p>
+            <ul>
+                {% for n in list_of_all_bootcamps %}
+                <li>{{n}}</li>
+                {% endfor %}
+            </ul>
+
+{% endblock %}
+
+{% block footer %}
+{{super()}}
+<p>You should also look at...</p>
+<p>[Bootcamp related to this one somehow]</p>
+{% endblock %}
